@@ -1,3 +1,7 @@
+# Author: Rutvik Tondwalkar
+# Date: 12/05/2023
+# Description: Main.py calls functions from gameengine.py for the Captain Veggie game to run.
+
 from GameEngine import GameEngine
 
 
