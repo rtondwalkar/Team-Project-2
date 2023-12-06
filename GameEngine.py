@@ -10,8 +10,8 @@ import pickle
 # Class Game Engine!
 class GameEngine:
     # Define Private Constant Variables
-    __NUMBEROFVEGGIES = 3
-    __NUMBEROFRABBITS = 10
+    __NUMBEROFVEGGIES = 30
+    __NUMBEROFRABBITS = 5
     __HIGHSCOREFILE = "highscore.data"
 
     # Create a new instance and set all required variables to private
