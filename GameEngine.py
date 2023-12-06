@@ -1,3 +1,7 @@
+# Author: Rutvik Tondwalkar
+# Date: 12/05/2023
+# Description: GameEngine.py contains all the functions required for the "Captain Veggie!" game to run.
+
 from Rabbit import Rabbit
 from Veggie import Veggie
 from Captain import Captain
@@ -181,7 +185,7 @@ class GameEngine:
             print(veggie)
 
         # Print Captain and rabbit symbols
-        print(f"\nCaptain Veggie is {self.__captain.g_symbol()}, and the rabbits are {self.__rabbits[0].g_symbol()}'s")
+        print(f"\nCaptain Veggie is {self.__captain.g_symbol()}, and the rabbits are {self.__rabbits[0].g_symbol()}'s.")
         print("Snake Symbol:", self.__snake.g_symbol())
         print("\nGood luck!")
 
@@ -435,7 +439,7 @@ class GameEngine:
         elif captain_movement == "d" or captain_movement == "D":
             self.moveCptHorizontal(1)
         else:
-            print(f"{captain_movement}is not a valid option")
+            print(f"{captain_movement} is not a valid option")
 
     def gameOver(self):
         """
@@ -479,10 +483,10 @@ class GameEngine:
         high_scores.append((initials, self.__score))
 
         # Sort the high scores list in descending order
-        high_scores.sort(reverse=True)
+        high_scores.sort(key=lambda x: x[1], reverse=True)
 
         # Display the high scores
-        print("\nHIGH SCORES:")
+        print("HIGH SCORES:")
         print("Name     Score")
         for initials, score in high_scores:
             print(f"{initials}           {score}")
